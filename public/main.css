@@ -2,17 +2,19 @@ body {
 	margin: 0px;
 	padding: 20px;
 	margin-left: 50px;
-	background: #0A0A0D;
+	background: #FFB90F;
 	text-align: justify;
-	font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font: 14px Futura, "Gill Sans", Helvetica, sans-serif;
 	color: #FFFFDC;
+  background-image: url("/shades.jpg");
+  background-repeat: no-repeat;
 }
 
 h1, h2, h3 {
 	font: 1.82em;
 	font-weight: normal;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #FFFFFF;
+	font-family: Futura, "Gill Sans", Helvetica, sans-serif;
+	color: #000000;
 	text-align: left;
 }
 
@@ -25,7 +27,7 @@ ul {
 }
 
 a {
-	color: #828170;
+	color: #EE7621;
 }
 
 a:hover {
@@ -41,7 +43,7 @@ hr {
 #logo h1 {
 	margin: 0;
 	height: 160px;
-	padding: 40px 0 0 0px;
+	padding: 120px 0 0 0px;
 	text-transform: lowercase;
 	letter-spacing: -2px;
 	font-size: 4em;
@@ -52,14 +54,15 @@ hr {
 #logo h1 a {
 	display: block;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #000000;
 }
 
 #logo p {
 	margin: -103px 0 0 2px;
 	text-transform: uppercase;
-	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-family: Futura, "Gill Sans", Helvetica, sans-serif;
 	font-weight: bold;
+  color: #EE7621;
 }
 
 #logo a {
@@ -71,7 +74,7 @@ hr {
 #logo2 h1 {
 	margin: 0;
 	height: 130px;
-	padding: 40px 0 0 0px;
+	padding: 120px 0 0 0px;
 	text-transform: lowercase;
 	letter-spacing: -2px;
 	font-size: 2em;
@@ -82,7 +85,7 @@ hr {
 #logo2 h1 a {
 	display: block;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #000000;
 }
 
 #logo2 p {
@@ -95,7 +98,7 @@ hr {
 #logo2 a {
 	display: block;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #ee7621;
 }
 
 /* Content */
@@ -126,7 +129,7 @@ hr {
 	text-align: center;
 	font-size: 10px;
 	font-weight: bold;
-	color: #999999;
+	color: #000000;
 }
 
 .post .date b {
@@ -135,7 +138,7 @@ hr {
 	display: block;
 	margin-top: -5px;
 	font-size: 14px;
-	color: #5C5C5C;
+	color: #ff8c00;
 	
 }
 
@@ -157,11 +160,11 @@ hr {
 	padding: 0;
 	line-height:normal;
 	text-transform: uppercase;
-	color: #979680;
+	color: #CD6600;
 }
 
 .post .meta a {
-	color: #828170;
+	color: #CD6600;
 }
 
 .post .entry {
@@ -229,13 +232,13 @@ hr {
 	margin: 0;
 	padding: 10px 0;
 	font-size: 10px;
-	color: #525252;
+	color: #FFEC8B;
 }
 
 /* Archive */
 .archive .date {
 	font-size: 85%;
-	color: #828170;
+	color: #cd6600;
 }
 
 .archive .title a {

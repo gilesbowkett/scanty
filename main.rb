@@ -9,8 +9,8 @@ configure do
 
 	require 'ostruct'
 	Blog = OpenStruct.new(
-		:title => 'a scanty blog',
-		:author => 'John Doe',
+		:title => "i'm vacationing in sunny nassau",
+		:author => 'Giles Bowkett',
 		:url_base => 'http://localhost:4567/',
 		:admin_password => 'changeme',
 		:admin_cookie_key => 'scanty_admin',
@@ -52,7 +52,7 @@ get '/past/:year/:month/:day/:slug/' do
 	post = Post.filter(:slug => params[:slug]).first
 	stop [ 404, "Page not found" ] unless post
 	@title = post.title
-	erb :post, :locals => { :post => post }
+	erb :post, :locals => { :post => post }, :layout => false
 end
 
 get '/past/:year/:month/:day/:slug' do
