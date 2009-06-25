@@ -1,5 +1,3 @@
-require File.dirname(__FILE__) + '/../vendor/maruku/maruku'
-
 $LOAD_PATH.unshift File.dirname(__FILE__) + '/../vendor/syntax'
 require 'syntax/convertors/html'
 
@@ -26,7 +24,7 @@ class Post < Sequel::Model
 	end
 
 	def body_html
-		to_html(body)
+		body
 	end
 
 	def summary
@@ -56,7 +54,7 @@ class Post < Sequel::Model
 	########
 
 	def to_html(markdown)
-		h = Maruku.new(markdown).to_html
+		h = markdown
 		h.gsub(/<code>([^<]+)<\/code>/m) do
 			convertor = Syntax::Convertors::HTML.for_syntax "ruby"
 			highlighted = convertor.convert($1)

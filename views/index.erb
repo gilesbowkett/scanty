@@ -24,12 +24,6 @@
 				| <a href="<%= post.url %>#disqus_thread">comments</a>
 			<% end %>
 		</small></p>
-		<div class="entry">
-			<%= post.summary_html %>
-			<% if post.more? %>
-				<a href="<%= post.url %>">Continue reading &raquo;</a>
-			<% end %>
-		</div>
 	</div>
 	<% end %>
 
